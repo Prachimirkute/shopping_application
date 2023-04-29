@@ -7,8 +7,11 @@ import { Ingredients } from '../shared/Ingredients.model';
   styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent {
-  Ingredients : Ingredients[] =[
+  Ingredient : Ingredients[] =[
     new Ingredients('Apple',5),
     new Ingredients('Mango',10)
   ];
+  onIngredientsAdd(Ingredients :Ingredients){
+    this.Ingredient.push(Ingredients);
+  }
 }
