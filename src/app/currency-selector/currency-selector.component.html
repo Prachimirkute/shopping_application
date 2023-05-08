@@ -1,0 +1,16 @@
+<div>
+    <select #code>
+        <option value="code">Select code</option>
+        <option *ngFor="let item of currencies" [value]="item.code">
+            {{ item.code }}
+        </option>
+    </select>
+
+    <select #conversionRate>
+        <option value="null">Select Conversion Rate</option>
+        <option *ngFor="let item of conversionRate" [value]="item">
+            {{ item }}
+        </option>
+    </select>
+    <button class="btn twobtn-space btn-success" (click)="onAddItem()">Add</button>
+</div>
