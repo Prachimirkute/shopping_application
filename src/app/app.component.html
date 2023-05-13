@@ -1,1 +1,12 @@
-<app-currency-calculator></app-currency-calculator>
+<app-header (routlink)="onNavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="loadFeature === 'Recipe'"></app-recipes>
+      <app-shopping-list *ngIf="loadFeature !== 'Recipe'"></app-shopping-list>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+<!-- <button (click)="onclick()">Save</button> -->
+<!-- <p>{{numbert}}</p> -->
