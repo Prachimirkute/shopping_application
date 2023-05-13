@@ -11,7 +11,8 @@ import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { BetterHighlightDirective } from './Directive/better-highlight';
+import { DropdownDirective } from './Directive/dropdown';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,9 @@ import { FooterComponent } from './footer/footer.component';
     RecipeDetailsComponent,
     ShoppingListComponent,
     ShoppingListEditComponent,
-    FooterComponent
+    FooterComponent,
+    BetterHighlightDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,

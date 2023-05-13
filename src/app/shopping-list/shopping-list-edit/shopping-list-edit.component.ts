@@ -10,17 +10,20 @@ export class ShoppingListEditComponent {
  @ViewChild('nameInput')nameInputRef!: ElementRef;
  @ViewChild('amountInput')amountInputRef!: ElementRef; 
  @Output() IngredientsAdd = new EventEmitter<Ingredients>();
-
+ @Output() IngredientsDelete = new EventEmitter<Ingredients>();
   onAddItem(){
     const ingName = this.nameInputRef.nativeElement.value;
     const ingAmount = this.amountInputRef.nativeElement.value;
     const newIngredient = new Ingredients(ingName, ingAmount);
     this.IngredientsAdd.emit(newIngredient);
   }
-  onDeleteItem(){
+  // onDeleteItem(){
+  //   const ingName = this.nameInputRef.nativeElement.value;
+  //   const ingAmount = this.amountInputRef.nativeElement.value;
+  //   const newIngredient = new Ingredients(ingName, ingAmount);
+  //   this.IngredientsDelete.emit(newIngredient);
+  // }
+  // onClearItem(){
 
-  }
-  onClearItem(){
-
-  }
+  // }
 }

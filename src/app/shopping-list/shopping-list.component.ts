@@ -14,4 +14,7 @@ export class ShoppingListComponent {
   onIngredientsAdd(Ingredients :Ingredients){
     this.Ingredient.push(Ingredients);
   }
+  // onIngredientsDelete(Ingredients :Ingredients){
+  //   this.Ingredient.pop(Ingredients);
+  // }
 }

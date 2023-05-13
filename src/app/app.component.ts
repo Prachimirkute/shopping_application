@@ -6,12 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  //  number =[1,2,3,4,5,6,7,8,9];
+  numOdd =[1,3,5,7,9];
+  numEven =[2,4,6,8];
+  // value=10;
+  onlyOdd = false;
   title = 'shopping_app';
   loadFeature = 'Recipe';
   onNavigate(feature: string) {
     this.loadFeature = feature;
   }
 
+  }
   // onclick() {
   //  let  num = 3;
   //   let roman = {
@@ -42,7 +48,7 @@ export class AppComponent {
   //        }
   //   }
   // }
-}
+
 
 //    let x = 10;
 //     let sign = Math.sign(x);
