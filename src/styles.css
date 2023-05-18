@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+ /* You can add global styles to this file, and also import other style files */
+ .sect1{  
+    height: 650px;  
+    /* background: url("assets/images/shopping.jpg");   */
+    background-color: black;
+    background-size: 100% ;
+    color: white;
+} 
+.btn{
+    border-radius: 100px!important;
+}
+.btn-success{
+    BACKGROUND-COLOR: #7bb035!important;
+}
+/* .form-control {
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid #f7fafd6e!important;
+} */
+/* .list-group-item {
+    background-color: rgb(255, 255, 255) !important;
+    border: var(--bs-list-group-border-width) solid rgb(0 0 0 / 42%)!important;
+} */
