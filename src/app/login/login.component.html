@@ -1,0 +1,16 @@
+
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+        <app-sign-Up></app-sign-Up>
+        <!-- (signupUserData)="signupUserData($event)" -->
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="text" name="Username" placeholder="User Name" [(ngModel)]="loginObj.Username">
+					<input type="password" name="Password" placeholder="Password" [(ngModel)]="loginObj.Password">
+					<button (click)="onLoginUp()">Login</button>
+				</form>
+			</div>
+	</div>

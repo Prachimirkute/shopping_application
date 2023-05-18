@@ -1,0 +1,10 @@
+<div class="signup">
+    <form>
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="text" name="txt" placeholder="User name" [(ngModel)]="signupobj.Username">
+        
+        <input type="email" name="email" placeholder="Email" [(ngModel)]="signupobj.email">
+        <input type="password" name="pswd" placeholder="Password" [(ngModel)]="signupobj.password">
+        <button class="btn btn-success" (click)="onSignUp()"><a routerLink="/login"></a>Sign up</button>
+    </form>
+</div>

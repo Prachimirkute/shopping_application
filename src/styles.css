@@ -1,22 +1,98 @@
  /* You can add global styles to this file, and also import other style files */
- .sect1{  
-    height: 650px;  
-    /* background: url("assets/images/shopping.jpg");   */
-    background-color: black;
-    background-size: 100% ;
-    color: white;
-} 
-.btn{
-    border-radius: 100px!important;
-}
-.btn-success{
-    BACKGROUND-COLOR: #7bb035!important;
-}
-/* .form-control {
+ .sect1 {
+     height: 650px;
+     /* background: url("assets/images/shopping.jpg");   */
+     background-color: black;
+     background-size: 100%;
+     color: white;
+ }
+
+ .btn {
+     border-radius: 100px !important;
+ }
+
+ .btn-success {
+     BACKGROUND-COLOR: #7bb035 !important;
+ }
+
+ /* .form-control {
     background-color: rgb(255, 255, 255) !important;
     border: 1px solid #f7fafd6e!important;
 } */
-/* .list-group-item {
+ /* .list-group-item {
     background-color: rgb(255, 255, 255) !important;
     border: var(--bs-list-group-border-width) solid rgb(0 0 0 / 42%)!important;
 } */
+ @media only screen and (max-width:700px) {
+    #chk{
+        display: none!important;
+    }
+     .navbar-collapse {
+         flex-basis: 100% !important;
+         flex-grow: 1 !important;
+     }
+
+     .collapse:not(.show) {
+         display: block !important;
+     }
+
+     .main {
+         width: 291px !important;
+         height: 380px !important;
+         /* background: red; */
+         /* overflow: scroll!important; */
+         /* background: url(https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/0352236…/0352236…/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=0352236…&hash=tfhgbs86ka6divo3llbvp93mg4csvb38) no-repeat center/ cover; */
+         border-radius: 10px !important;
+         box-shadow: 5px 20px 50px #000 !important;
+         left: 27% !important;
+         top: 50% !important;
+         margin-left: -15% !important;
+         position: absolute !important;
+         margin-top: -26% !important;
+         /* border: #e0dede; */
+         /* border-width: 3px; */
+         border-style: solid !important;
+     }
+
+     .signup {
+         position: relative !important;
+         width: 100% !important;
+         height: 100% !important;
+     }
+
+     label {
+        color: #fff!important;
+        font-size: 1.3em!important;
+        justify-content: center!important;
+        display: flex!important;
+        margin: 14px!important;
+        font-weight: bold!important;
+        cursor: pointer!important;
+        transition: .5s ease-in-out!important;
+     }
+
+
+     .login {
+         height: 360px !important;
+         background: #7bb035 !important;
+         border-radius: 60% / 10% !important;
+         transform: translateY(-75px) !important;
+         transition: .8s ease-in-out !important;
+     }
+
+     .login label {
+         color: white !important;
+         transform: scale(.6) !important;
+     }
+
+     #chk:checked~.login {
+         transform: translateY(-345px) !important;
+     }
+     .sect1 {
+        height: 650px!important;
+        background-color: black!important;
+        background-size: 100%!important;
+        color: white!important;
+        overflow: scroll!important;
+    }
+ }

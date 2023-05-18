@@ -13,6 +13,9 @@ import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/sh
 import { FooterComponent } from './footer/footer.component';
 import { BetterHighlightDirective } from './Directive/better-highlight';
 import { DropdownDirective } from './Directive/dropdown';
+import { LoginComponent } from './login/login.component';
+import { signUpComponent } from './sign_up/sign_up';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,11 +28,14 @@ import { DropdownDirective } from './Directive/dropdown';
     ShoppingListEditComponent,
     FooterComponent,
     BetterHighlightDirective,
-    DropdownDirective
+    DropdownDirective,
+    LoginComponent,
+    signUpComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

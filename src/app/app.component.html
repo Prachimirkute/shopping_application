@@ -6,7 +6,9 @@
   <div class="row">
     <div class="col-md-12">
       <app-recipes *ngIf="loadFeature === 'Recipe'"></app-recipes>
-      <app-shopping-list *ngIf="loadFeature !== 'Recipe'"></app-shopping-list>
+      <app-shopping-list *ngIf="loadFeature === 'Shopping_list'"></app-shopping-list>
+      <app-login *ngIf="loadFeature === 'login'"></app-login>
+      <!-- <app-register-now *ngIf="loadFeature === 'RegisterNow'"></app-register-now> -->
     </div>
   </div>
 </div>
