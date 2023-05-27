@@ -16,6 +16,12 @@ import { DropdownDirective } from './Directive/dropdown';
 import { LoginComponent } from './login/login.component';
 import { signUpComponent } from './sign_up/sign_up';
 import { FormsModule } from '@angular/forms';
+import { NewRecipesComponent } from './recipes/new-recipes/new-recipes.component';
+import { ChatRoomComponent } from './chat-room/chat-room.component';
+import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
+import { shoppinglistservice } from './shopping-list/shopping-list.service';
+
+const socketConfig: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,14 +36,17 @@ import { FormsModule } from '@angular/forms';
     BetterHighlightDirective,
     DropdownDirective,
     LoginComponent,
-    signUpComponent
+    signUpComponent,
+    NewRecipesComponent,
+    ChatRoomComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SocketIoModule.forRoot(socketConfig)
   ],
-  providers: [],
+  providers: [shoppinglistservice],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,6 +10,7 @@ export class RecipeItemComponent {
   @Input()
   recipe!: Recipes;
   @Output() recipeSelected = new EventEmitter<void>();
+
   onSelect(){
     this.recipeSelected.emit();
   }
