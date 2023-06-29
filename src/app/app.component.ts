@@ -13,7 +13,7 @@ export class AppComponent {
   // value=10;
   onlyOdd = false;
   title = 'shopping_app';
-  loadFeature = 'Recipe';
+  loadFeature = 'sign-up';
   onNavigate(feature: string) {
     this.loadFeature = feature;
   }

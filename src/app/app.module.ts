@@ -13,13 +13,13 @@ import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/sh
 import { FooterComponent } from './footer/footer.component';
 import { BetterHighlightDirective } from './Directive/better-highlight';
 import { DropdownDirective } from './Directive/dropdown';
-import { LoginComponent } from './login/login.component';
-import { signUpComponent } from './sign_up/sign_up';
 import { FormsModule } from '@angular/forms';
 import { NewRecipesComponent } from './recipes/new-recipes/new-recipes.component';
 import { ChatRoomComponent } from './chat-room/chat-room.component';
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { shoppinglistservice } from './shopping-list/shopping-list.service';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const socketConfig: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
 @NgModule({
@@ -35,10 +35,10 @@ const socketConfig: SocketIoConfig = { url: 'http://localhost:3000', options: {}
     FooterComponent,
     BetterHighlightDirective,
     DropdownDirective,
-    LoginComponent,
-    signUpComponent,
     NewRecipesComponent,
-    ChatRoomComponent
+    ChatRoomComponent,
+    LoginComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

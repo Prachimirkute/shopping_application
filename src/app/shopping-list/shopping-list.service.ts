@@ -14,4 +14,13 @@ export class shoppinglistservice{
         this.Ingredient.push(Ingredients);
         this.IngredientsChanged.emit(this.Ingredient.slice());
     }
+    DeleteIngredients(Ingredients : Ingredients){
+        this.Ingredient.pop();
+        this.IngredientsChanged.emit(this.Ingredient.slice());
+    }
+    // ClearIngredients(Ingredients : Ingredients){
+    //     this.Ingredient.length = 0 ;
+    //     this.IngredientsChanged.emit();
+    // }
+
 }

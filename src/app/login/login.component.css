@@ -8,12 +8,12 @@
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
     left: 50%;
-    top: 70%;
+    /* top: 20%; */
     margin-left: -15%;
     position: absolute;
-    margin-top: -25%;
+    /* margin-top: -25%; */
     border:#e0dede; 
-    border-width:3px; 
+    border-width:5px; 
     border-style:solid;
 }
 #chk{

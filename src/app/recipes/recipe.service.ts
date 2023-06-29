@@ -1,8 +1,9 @@
+import { EventEmitter } from "@angular/core";
 import { Ingredients } from "../shared/Ingredients.model";
 import { Recipes } from "./recipe.model";
 
 export class receipeservice{
-
+  RecipesChanged = new EventEmitter<Recipes[]>();
     recipes : Recipes[] =[
         new Recipes ('Testy Schnitzel ',
          'Amazingly Tasty and Crispy Chicken Schnitzel' ,
@@ -20,4 +21,8 @@ export class receipeservice{
     getRecipes(){
         return this.recipes.slice();
     }
+    addRecipes(Recipes : Recipes){
+      this.recipes.push(Recipes);
+      this.RecipesChanged.emit(this.recipes.slice());
+  }
 }

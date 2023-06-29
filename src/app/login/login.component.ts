@@ -1,6 +1,5 @@
-import { Component, Output, OnInit } from '@angular/core';
-import { EventEmitter } from '@angular/core';
-// import { json } from 'stream/consumers';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,12 +7,12 @@ import { EventEmitter } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit{
-  // @Output() signupUserData : EventEmitter<any>= new EventEmitter;
-  loginObj: any = {
+   loginObj: any = {
     Username: '',
     password: ''
   }
   signupUser: any;
+    constructor(private router : Router){}
   ngOnInit():void{
     const localData = localStorage.getItem('signupUser');
     console.log(localData);
@@ -24,15 +23,14 @@ export class LoginComponent implements OnInit{
   onLoginUp(){
 const isuserExist = this.signupUser;
 for(let i=0;i<=isuserExist.length;i++){
-  if(isuserExist[i].Username == this.loginObj.Username && isuserExist[i].password == this.loginObj.Password){
+  if(isuserExist[i].Username == this.loginObj.Username && isuserExist[i].password == this.loginObj.password){
     alert('User Login Successfully');
+    // this.router.navigate(['/recipes']);
     break;
   }else{
     alert('Wrong Credentials');
     break;
   } 
 }
- 
-}
-
+  }
 }

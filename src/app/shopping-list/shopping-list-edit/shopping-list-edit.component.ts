@@ -11,7 +11,7 @@ export class ShoppingListEditComponent {
  @ViewChild('nameInput')nameInputRef!: ElementRef;
  @ViewChild('amountInput')amountInputRef!: ElementRef; 
 //  @Output() IngredientsAdd = new EventEmitter<Ingredients>();
- @Output() IngredientsDelete = new EventEmitter<Ingredients>();
+//  @Output() IngredientsDelete = new EventEmitter<Ingredients>();
  constructor( private Shoppinglistservice :shoppinglistservice ){}
   onAddItem(){
     console.log("hello");
@@ -21,13 +21,13 @@ export class ShoppingListEditComponent {
     // this.IngredientsAdd.emit(newIngredient);
     this.Shoppinglistservice.addIngredients(newIngredient);
   }
-  // onDeleteItem(){
-  //   const ingName = this.nameInputRef.nativeElement.value;
-  //   const ingAmount = this.amountInputRef.nativeElement.value;
-  //   const newIngredient = new Ingredients(ingName, ingAmount);
-  //   this.IngredientsDelete.emit(newIngredient);
-  // }
-  // onClearItem(){
+  onDeleteItem(){
+    const ingName = this.nameInputRef.nativeElement.value;
+    const ingAmount = this.amountInputRef.nativeElement.value;
+    const newIngredient = new Ingredients(ingName, ingAmount);
+    this.Shoppinglistservice.DeleteIngredients(newIngredient);
+  }
+  // onclearItem(){
 
   // }
 }

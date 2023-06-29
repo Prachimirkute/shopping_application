@@ -1,16 +1,9 @@
+<div class="signup">
+    <form>
+        <label for="chk" aria-hidden="true">Login</label>
+        <input type="text" name="txt" placeholder="User name" [(ngModel)]="loginObj.Username">
+        <input type="password" name="pswd" placeholder="Password" [(ngModel)]="loginObj.password">
+        <button class="btn btn-success" (click)="onLoginUp()"><a routerLink="/login"></a>Login</button>
+    </form>
+</div>
 
-	<div class="main">  	
-		<input type="checkbox" id="chk" aria-hidden="true">
-
-        <app-sign-Up></app-sign-Up>
-        <!-- (signupUserData)="signupUserData($event)" -->
-
-			<div class="login">
-				<form>
-					<label for="chk" aria-hidden="true">Login</label>
-					<input type="text" name="Username" placeholder="User Name" [(ngModel)]="loginObj.Username">
-					<input type="password" name="Password" placeholder="Password" [(ngModel)]="loginObj.Password">
-					<button (click)="onLoginUp()">Login</button>
-				</form>
-			</div>
-	</div>
