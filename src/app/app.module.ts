@@ -20,7 +20,7 @@ import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { shoppinglistservice } from './shopping-list/shopping-list.service';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-
+import { HttpClientModule } from '@angular/common/http';
 const socketConfig: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
 @NgModule({
   declarations: [
@@ -44,6 +44,7 @@ const socketConfig: SocketIoConfig = { url: 'http://localhost:3000', options: {}
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     SocketIoModule.forRoot(socketConfig)
   ],
   providers: [shoppinglistservice],

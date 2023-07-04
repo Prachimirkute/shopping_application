@@ -1,9 +1,18 @@
 <div class="signup">
-    <form>
+    <form #loginForm="ngForm" (ngSubmit)="onLoginUp()">
         <label for="chk" aria-hidden="true">Login</label>
-        <input type="text" name="txt" placeholder="User name" [(ngModel)]="loginObj.Username">
-        <input type="password" name="pswd" placeholder="Password" [(ngModel)]="loginObj.password">
-        <button class="btn btn-success" (click)="onLoginUp()"><a routerLink="/login"></a>Login</button>
+        <small class="text-danger">{{msg}}</small>
+        <div>
+            <input type="text" name="email" placeholder="Email" [(ngModel)]="user.emailid" required #email="ngModel" 
+            [class.is-invalid]="email.invalid && email.touched">
+            <small class="text-danger" [class.d-none]="email.valid || email.untouched">Email id is required filed</small>
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="Password" [(ngModel)]="user.password"  required #password="ngModel"
+            [class.is-invalid]="password.invalid && password.touched">
+            <small class="text-danger" [class.d-none]="password.valid || password.untouched">password is required filed</small>
+        </div>
+        <button class="btn btn-success"><a routerLink="/login"></a>Login</button>
     </form>
 </div>
 
