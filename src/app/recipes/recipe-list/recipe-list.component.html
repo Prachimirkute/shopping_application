@@ -1,7 +1,15 @@
+<div class="row" style="margin-top: 10px;">
+    <div class="col-xs-12">
+        <button class="btn btn-success"(click)="newRecipes()">New Recipes</button>
+    </div>
+</div>
 <div class="row mt-2">
     <div class="col-sm-14" >
         <div class="list-group">
-        <app-recipe-item *ngFor="let recipesvalue of recipes" [recipe]="recipesvalue" (recipeSelected)="onselect(recipesvalue)"></app-recipe-item>
+        <app-recipe-item *ngFor="let recipesvalue of recipes ; let i = index"
+                [recipe]="recipesvalue"
+                [index]="i">
+        </app-recipe-item>
     </div>
 </div>
 <!-- </div> -->

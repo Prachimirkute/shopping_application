@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
@@ -21,6 +22,9 @@ import { shoppinglistservice } from './shopping-list/shopping-list.service';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RecipesStartComponent } from './recipes/recipes-start/recipes-start.component';
+import { RecipesEditComponent } from './recipes/recipes-edit/recipes-edit.component';
+import { ChatbotComponent } from './chatbot/chatbot.component';
 const socketConfig: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
 @NgModule({
   declarations: [
@@ -38,7 +42,10 @@ const socketConfig: SocketIoConfig = { url: 'http://localhost:3000', options: {}
     NewRecipesComponent,
     ChatRoomComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    RecipesStartComponent,
+    RecipesEditComponent,
+    ChatbotComponent
   ],
   imports: [
     BrowserModule,

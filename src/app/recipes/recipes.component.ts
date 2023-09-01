@@ -10,20 +10,9 @@ import { receipeservice } from './recipe.service';
 })
 
 export class RecipesComponent implements OnInit{
-  selectedRecipe!: Recipes;
-  Viewtype = true;
-  
-  // newRecipesvalue : boolean = false;
+
   @Output() newrecipe = new EventEmitter<void>();
   constructor(private router: Router) { }
   ngOnInit(){
-  }
-  newRecipes(type ? : any ){
-    this.Viewtype = type == 'list' ? true : false;
-  }
-  selectedRecipe1(data : any ){
-    this.newRecipes("list");
-    this.selectedRecipe = data;
-    console.log("Ashutosh ", data);
   }
 }

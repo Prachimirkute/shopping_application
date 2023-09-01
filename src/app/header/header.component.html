@@ -6,33 +6,34 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" appBetterHighlight routerLinkActive="active" (click)="selectLink('Recipe')">Recipes</a>
+                    <a class="nav-link" routerLinkActive="active" appBetterHighlight routerLink="/recipes">Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" appBetterHighlight routerLinkActive="active" (click)="selectLink('Shopping_list')">Shopping list</a>
+                    <a class="nav-link" routerLinkActive="active" appBetterHighlight
+                        routerLink="/shopping-list">Shopping list</a>
                 </li>
                 <!-- <li class="nav-item">
-                    <a class="nav-link" appBetterHighlight routerLinkActive="active" (click)="selectLink('login')">Login</a>
+                    <a class="nav-link" appBetterHighlight routerLink="/login">Login</a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" appBetterHighlight routerLinkActive="active" (click)="selectLink('sign-up')">Login</a>
+                    <a class="nav-link" routerLinkActive="active" appBetterHighlight routerLink="/sign-up">Login</a>
                 </li>
-                <li class="dropdown" appDropdown >
-                    <a href="#" class="nav-link dropdown-toggle" role="button">Manage<span
-                        class="caret"></span></a>
+                <li class="dropdown" appDropdown>
+                    <a class="nav-link dropdown-toggle" style="cursor: pointer;" role="button">Manage<span
+                            class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Save Data</a></li>
-                        <li><a class="dropdown-item" href="#">Fetch Data</a></li>
+                        <li><a class="dropdown-item" style="cursor: pointer;">Save Data</a></li>
+                        <li><a class="dropdown-item" style="cursor: pointer;">Fetch Data</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" appBetterHighlight routerLinkActive="active" (click)="selectLink('chatboard')">Chat Room</a>
-                </li>
+                </li> -->
             </ul>
         </div>
         <!-- <div> -->
-            <!-- navbar-right -->
-            <!-- <ul class="nav navbar-nav">
+        <!-- navbar-right -->
+        <!-- <ul class="nav navbar-nav">
                 <li class="dropdown" appDropdown >
                     <a href="#" class="nav-link dropdown-toggle" role="button">Manage<span
                         class="caret"></span></a>
