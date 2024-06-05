@@ -1,6 +1,7 @@
 # ShoppingApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+The app provides the possibility to maintain recipe books and shopping lists. Customers have their own accounts customer can sign up or else login their own account
 
 ## Development server
 
